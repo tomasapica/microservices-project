@@ -22,7 +22,7 @@ COPY --from=build /app/target/*.jar app.jar
 RUN chown spring:spring app.jar
 USER spring:spring
 
-# Expose port (adjust for each service: 8081 for user-service, 8082 for product-service, etc.)
+# Expose port (adjust for each service: 8081 - user-service, 8082 - product-service, etc.)
 EXPOSE 8081
 
 # JVM tuning for containers (adjust memory percentage as needed)
